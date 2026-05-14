@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "User API Collection",
+    "version": "1.0.0"
+  },
+  "item": [
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://api.example.com/users",
+          "protocol": "https",
+          "host": ["api", "example", "com"],
+          "path": ["users"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"password\": \"SecurePass123\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Get User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.example.com/users/123",
+          "protocol": "https",
+          "host": ["api", "example", "com"],
+          "path": ["users", "123"]
+        }
+      }
+    }
+  ]
+}
